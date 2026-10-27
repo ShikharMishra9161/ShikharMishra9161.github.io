@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Shikhar Mishra — Software Engineer</title>
+  <meta name="description" content="Shikhar Mishra — Software Engineer & CS undergrad (B.Tech 2027). Full-stack and backend developer building scalable web apps with Node.js, TypeScript, Next.js, Redis and MongoDB." />
+  <meta property="og:title" content="Shikhar Mishra — Software Engineer" />
+  <meta property="og:description" content="Full-stack & backend engineer. Node.js · TypeScript · Next.js · Redis · MongoDB." />
+  <meta property="og:image" content="assets/profile.jpg" />
+  <meta name="theme-color" content="#0a0c10" />
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'><rect width='64' height='64' rx='14' fill='%2310b981'/><text x='50%25' y='54%25' dominant-baseline='middle' text-anchor='middle' font-family='monospace' font-weight='700' font-size='30' fill='%230a0c10'>SM</text></svg>" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="bg-grid" aria-hidden="true"></div>
+  <div class="bg-glow" aria-hidden="true"></div>
+
+  <!-- ===== Nav ===== -->
+  <header class="nav" id="nav">
+    <div class="container nav__inner">
+      <a href="#top" class="nav__logo"><span class="mono">&lt;</span>Shikhar<span class="accent">.</span>dev<span class="mono">/&gt;</span></a>
+      <nav class="nav__links" id="navLinks">
+        <a href="#about">About</a>
+        <a href="#experience">Experience</a>
+        <a href="#projects">Projects</a>
+        <a href="#skills">Skills</a>
+        <a href="#contact">Contact</a>
+        <a href="assets/Shikhar_Mishra_Resume.pdf" target="_blank" rel="noopener" class="btn btn--sm btn--outline">Resume</a>
+      </nav>
+      <button class="nav__toggle" id="navToggle" aria-label="Toggle menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <main id="top">
+    <!-- ===== Hero ===== -->
+    <section class="hero container">
+      <div class="hero__text">
+        <p class="status"><span class="status__dot"></span>Open to SDE internships &amp; new-grad roles (2027)</p>
+        <h1 class="hero__title">Hi, I'm <span class="gradient">Shikhar Mishra</span>.</h1>
+        <h2 class="hero__subtitle">I build <span class="typed" id="typed">scalable backend systems</span><span class="caret">|</span></h2>
+        <p class="hero__desc">
+          Software engineer and CS undergrad at AKGEC. I ship production-ready web apps and data services with
+          <strong>Node.js</strong>, <strong>TypeScript</strong>, <strong>Next.js</strong>, <strong>Redis</strong> and <strong>MongoDB</strong>,
+          and I like measuring things: latency, throughput, failure rates.
+        </p>
+        <div class="hero__cta">
+          <a href="#projects" class="btn btn--primary">View my work</a>
+          <a href="assets/Shikhar_Mishra_Resume.pdf" download class="btn btn--outline">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+            Download Resume
+          </a>
+        </div>
+        <div class="hero__social">
+          <a href="https://github.com/ShikharMishra9161" target="_blank" rel="noopener" aria-label="GitHub">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 .5C5.65.5.5 5.65.5 12a11.5 11.5 0 0 0 7.86 10.92c.58.1.79-.25.79-.56v-2c-3.2.7-3.87-1.37-3.87-1.37-.53-1.33-1.28-1.69-1.28-1.69-1.05-.72.08-.7.08-.7 1.16.08 1.77 1.19 1.77 1.19 1.03 1.77 2.7 1.26 3.36.96.1-.75.4-1.26.73-1.55-2.55-.29-5.24-1.28-5.24-5.68 0-1.26.45-2.28 1.19-3.08-.12-.29-.52-1.46.11-3.05 0 0 .97-.31 3.17 1.18a11 11 0 0 1 5.77 0c2.2-1.49 3.17-1.18 3.17-1.18.63 1.59.23 2.76.11 3.05.74.8 1.19 1.82 1.19 3.08 0 4.41-2.69 5.38-5.25 5.67.41.36.78 1.06.78 2.14v3.17c0 .31.21.67.8.56A11.5 11.5 0 0 0 23.5 12C23.5 5.65 18.35.5 12 .5Z"/></svg>
+          </a>
+          <a href="https://www.linkedin.com/in/shikhar-mishra" target="_blank" rel="noopener" aria-label="LinkedIn">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M20.45 20.45h-3.56v-5.57c0-1.33-.02-3.04-1.85-3.04-1.86 0-2.14 1.45-2.14 2.94v5.67H9.34V9h3.42v1.56h.05c.48-.9 1.64-1.85 3.37-1.85 3.6 0 4.27 2.37 4.27 5.46v6.28ZM5.34 7.43a2.06 2.06 0 1 1 0-4.13 2.06 2.06 0 0 1 0 4.13ZM7.12 20.45H3.56V9h3.56v11.45ZM22.22 0H1.77C.79 0 0 .77 0 1.73v20.54C0 23.23.79 24 1.77 24h20.45c.98 0 1.78-.77 1.78-1.73V1.73C24 .77 23.2 0 22.22 0Z"/></svg>
+          </a>
+          <a href="https://leetcode.com/u/shikharmishra7" target="_blank" rel="noopener" aria-label="LeetCode">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M13.48 0a1.37 1.37 0 0 0-.96.44L7.12 6.21l-2.69 2.88A5.27 5.27 0 0 0 3 12.6a5.36 5.36 0 0 0 1.58 3.86l4.33 4.36a5.33 5.33 0 0 0 7.47.03l2.6-2.43a1.38 1.38 0 0 0-1.88-2.01l-2.6 2.43a2.57 2.57 0 0 1-3.6-.02l-4.32-4.36a2.6 2.6 0 0 1-.76-1.87 2.5 2.5 0 0 1 .67-1.73l2.67-2.87 5.4-5.77A1.37 1.37 0 0 0 13.48 0Zm-2.87 13.82a1.38 1.38 0 0 0 0 2.75h9.15a1.38 1.38 0 0 0 0-2.75Z"/></svg>
+          </a>
+          <a href="mailto:shikharmishra9161@gmail.com" aria-label="Email">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-10 6L2 7"/></svg>
+          </a>
+        </div>
+      </div>
+
+      <div class="hero__visual">
+        <div class="photo-card">
+          <img src="assets/profile.jpg" alt="Portrait of Shikhar Mishra" width="420" height="420" />
+        </div>
+        <div class="code-card mono" aria-hidden="true">
+          <div class="code-card__bar"><i></i><i></i><i></i><span>shikhar.ts</span></div>
+<pre><span class="k">const</span> <span class="v">shikhar</span> = {
+  role: <span class="s">"Software Engineer"</span>,
+  stack: [<span class="s">"TS"</span>, <span class="s">"Node"</span>, <span class="s">"Next.js"</span>],
+  leetcode: <span class="n">300</span>+,
+  shipping: <span class="k">true</span>,
+};</pre>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== Stats ===== -->
+    <section class="container stats reveal">
+      <div class="stat"><span class="stat__num" data-count="300" data-suffix="+">0</span><span class="stat__label">DSA problems solved</span></div>
+      <div class="stat"><span class="stat__num" data-count="91" data-suffix="%">0</span><span class="stat__label">Query latency cut</span></div>
+      <div class="stat"><span class="stat__num" data-count="200" data-suffix="/s">0</span><span class="stat__label">Jobs sustained, p99 &lt; 85ms</span></div>
+      <div class="stat"><span class="stat__num" data-count="44" data-suffix="">0</span><span class="stat__label">REST endpoints shipped</span></div>
+    </section>
+
+    <!-- ===== About ===== -->
+    <section class="section container" id="about">
+      <h2 class="section__title reveal"><span class="mono accent">01.</span> About me</h2>
+      <div class="about reveal">
+        <div class="about__text">
+          <p>
+            I'm a Computer Science undergrad at <strong>Ajay Kumar Garg Engineering College</strong> (B.Tech, 2023–2027)
+            who enjoys the parts of software most people never see: job queues, retry logic, indexes and the
+            gap between "it works" and "it works under load."
+          </p>
+          <p>
+            Most recently I was a <strong>Software Engineering Intern at Itrik Softech</strong>, building REST APIs and data
+            services in Node.js and hardening JWT auth flows. On my own, I've built an AI mock-interview platform with
+            sub-1.2s voice responses, a distributed job system that survives worker crashes, and a MERN app whose
+            queries I made 11x faster.
+          </p>
+          <p>
+            I write modular, testable code, I'm comfortable in agile teams, and I sharpen fundamentals daily with
+            300+ problems solved in Java on LeetCode.
+          </p>
+        </div>
+        <ul class="about__facts">
+          <li><span>Location</span>Ghaziabad, India</li>
+          <li><span>Education</span>B.Tech CSE, AKGEC '27</li>
+          <li><span>Focus</span>Backend · Full-stack · AI apps</li>
+          <li><span>Looking for</span>SDE Intern / New Grad</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- ===== Experience ===== -->
+    <section class="section container" id="experience">
+      <h2 class="section__title reveal"><span class="mono accent">02.</span> Experience</h2>
+      <div class="timeline">
+        <article class="timeline__item reveal">
+          <div class="timeline__dot"></div>
+          <div class="card">
+            <div class="card__head">
+              <div>
+                <h3>Software Engineering Intern</h3>
+                <p class="card__org">Itrik Softech Private Limited</p>
+              </div>
+              <span class="pill mono">Jan 2026 – Jun 2026</span>
+            </div>
+            <ul class="bullets">
+              <li>Designed, built and deployed scalable backend features, <strong>REST APIs</strong> and data services in <strong>Node.js</strong>, with a focus on clean, maintainable code.</li>
+              <li>Built secure <strong>JWT authentication</strong> workflows and handled debugging, defect resolution and performance improvements across endpoints.</li>
+              <li>Worked in agile sprints with daily standups, sprint planning and peer code reviews to ship reliable infrastructure.</li>
+            </ul>
+            <div class="tags"><span>Node.js</span><span>REST APIs</span><span>JWT</span><span>Agile</span></div>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- ===== Projects ===== -->
+    <section class="section container" id="projects">
+      <h2 class="section__title reveal"><span class="mono accent">03.</span> Featured projects</h2>
+
+      <div class="projects">
+        <!-- Saamne -->
+        <article class="project reveal">
+          <div class="project__top">
+            <span class="project__icon">🎙️</span>
+            <div class="project__links">
+              <!-- TODO: replace with the exact repo URL -->
+              <a href="https://github.com/ShikharMishra9161" target="_blank" rel="noopener" aria-label="Saamne on GitHub">GitHub ↗</a>
+            </div>
+          </div>
+          <h3>Saamne</h3>
+          <p class="project__sub">AI mock-interview platform · Full-Stack</p>
+          <p class="project__desc">
+            AI interviewer with real-time voice, live coding and structured feedback across 3 simulated rounds.
+            It parses your resume PDF to generate personalized technical questions.
+          </p>
+          <ul class="metrics">
+            <li><b>2–3x</b> faster voice replies (1.2s) by streaming LLM output to speech sentence by sentence</li>
+            <li><b>4</b>-language sandboxed code runner with hidden perf tests that reject brute-force solutions</li>
+            <li><b>Zod</b>-validated LLM feedback reports</li>
+          </ul>
+          <div class="tags"><span>Next.js 15</span><span>React 19</span><span>TypeScript</span><span>Gemini API</span><span>Monaco</span><span>Tailwind</span><span>Zod</span></div>
+        </article>
+
+        <!-- TaskFlow -->
+        <article class="project reveal">
+          <div class="project__top">
+            <span class="project__icon">⚙️</span>
+            <div class="project__links">
+              <!-- TODO: replace with the exact repo URL -->
+              <a href="https://github.com/ShikharMishra9161" target="_blank" rel="noopener" aria-label="TaskFlow on GitHub">GitHub ↗</a>
+            </div>
+          </div>
+          <h3>TaskFlow</h3>
+          <p class="project__sub">Distributed background-job system · Backend</p>
+          <p class="project__desc">
+            A fault-tolerant job processing system with a priority Redis queue, idempotent job creation,
+            dead-letter handling and exponential backoff retries across 4 Dockerized services.
+          </p>
+          <ul class="metrics">
+            <li><b>~200 jobs/s</b> sustained at <b>p99 &lt; 85ms</b> in load tests</li>
+            <li><b>100%</b> of in-flight jobs requeued after simulated worker crashes (heartbeat recovery)</li>
+            <li><b>~4,000</b> jobs processed with <b>zero</b> failures</li>
+          </ul>
+          <div class="tags"><span>Node.js</span><span>TypeScript</span><span>Redis</span><span>MongoDB</span><span>Docker</span></div>
+        </article>
+
+        <!-- AI Study Planner -->
+        <article class="project reveal">
+          <div class="project__top">
+            <span class="project__icon">📚</span>
+            <div class="project__links">
+              <!-- TODO: replace with the live URL and exact repo URL -->
+              <a href="https://github.com/ShikharMishra9161" target="_blank" rel="noopener" aria-label="AI Study Planner live demo">Live ↗</a>
+              <a href="https://github.com/ShikharMishra9161" target="_blank" rel="noopener" aria-label="AI Study Planner on GitHub">GitHub ↗</a>
+            </div>
+          </div>
+          <h3>AI Study Planner</h3>
+          <p class="project__sub">Gamified MERN app with an AI agent · Full-Stack</p>
+          <p class="project__desc">
+            A MERN app with 44 REST endpoints across 6 models, gamified progression, a Gemini agent with
+            function calling, and a RAG pipeline with OCR for uploaded files.
+          </p>
+          <ul class="metrics">
+            <li><b>91%</b> lower query latency (167ms → 15ms) from 9 compound indexes</li>
+            <li><b>99.9%</b> fewer documents scanned, benchmarked on 100K seeded tasks</li>
+            <li><b>RAG + OCR</b> pipeline for secure file processing</li>
+          </ul>
+          <div class="tags"><span>React</span><span>Node.js</span><span>Express</span><span>MongoDB</span><span>Gemini</span><span>RAG</span></div>
+        </article>
+      </div>
+
+      <div class="center reveal">
+        <a href="https://github.com/ShikharMishra9161" target="_blank" rel="noopener" class="btn btn--outline">See more on GitHub ↗</a>
+      </div>
+    </section>
+
+    <!-- ===== Skills ===== -->
+    <section class="section container" id="skills">
+      <h2 class="section__title reveal"><span class="mono accent">04.</span> Tech stack</h2>
+      <div class="skills">
+        <div class="skill-group reveal">
+          <h3>Languages</h3>
+          <div class="chips"><span>TypeScript</span><span>JavaScript</span><span>Java</span><span>Python</span><span>SQL</span><span>HTML</span><span>CSS</span></div>
+        </div>
+        <div class="skill-group reveal">
+          <h3>Frameworks</h3>
+          <div class="chips"><span>Node.js</span><span>Express.js</span><span>Next.js</span><span>React</span><span>Tailwind CSS</span></div>
+        </div>
+        <div class="skill-group reveal">
+          <h3>Data &amp; Infra</h3>
+          <div class="chips"><span>MongoDB</span><span>MySQL</span><span>Redis</span><span>Docker</span><span>Git</span><span>GitHub workflows</span></div>
+        </div>
+        <div class="skill-group reveal">
+          <h3>Core</h3>
+          <div class="chips"><span>DSA</span><span>OOP / OOD</span><span>REST APIs</span><span>JWT Auth</span><span>Debugging</span><span>Agile</span></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== Achievements & Education ===== -->
+    <section class="section container" id="achievements">
+      <h2 class="section__title reveal"><span class="mono accent">05.</span> Achievements &amp; education</h2>
+      <div class="grid-2">
+        <div class="card reveal">
+          <h3 class="card__h">🏆 Achievements</h3>
+          <ul class="bullets">
+            <li><strong>300+ DSA problems</strong> solved in Java on <a href="https://leetcode.com/u/shikharmishra7" target="_blank" rel="noopener">LeetCode</a>.</li>
+            <li>Cleared <strong>Rounds 1 &amp; 2 of HackWithInfy</strong> (Infosys), delivering bug-free solutions under strict time limits.</li>
+          </ul>
+        </div>
+        <div class="card reveal">
+          <h3 class="card__h">🎓 Education</h3>
+          <p><strong>B.Tech, Computer Science &amp; Engineering</strong></p>
+          <p class="muted">Ajay Kumar Garg Engineering College (AKGEC), Ghaziabad · 2023 – 2027</p>
+          <p class="muted small">Coursework: Data Structures &amp; Algorithms, Object-Oriented Design, DBMS, Operating Systems</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== Contact ===== -->
+    <section class="section container contact reveal" id="contact">
+      <p class="mono accent">06. What's next?</p>
+      <h2 class="contact__title">Let's build something together.</h2>
+      <p class="contact__desc">
+        I'm actively looking for SDE internships and new-grad roles. If you're hiring or want to chat
+        about a project, my inbox is open. I usually reply within a day.
+      </p>
+      <div class="contact__actions">
+        <a href="mailto:shikharmishra9161@gmail.com" class="btn btn--primary btn--lg">Say hello 👋</a>
+        <button class="btn btn--outline btn--lg" id="copyEmail" data-email="shikharmishra9161@gmail.com">Copy email</button>
+      </div>
+      <div class="contact__links mono">
+        <a href="https://www.linkedin.com/in/shikhar-mishra" target="_blank" rel="noopener">LinkedIn</a>
+        <a href="https://github.com/ShikharMishra9161" target="_blank" rel="noopener">GitHub</a>
+        <a href="https://leetcode.com/u/shikharmishra7" target="_blank" rel="noopener">LeetCode</a>
+        <a href="tel:+917398166191">+91 73981 66191</a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer container mono">
+    <p>Designed &amp; built by Shikhar Mishra · <span id="year"></span></p>
+  </footer>
+
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+  <script src="script.js"></script>
+</body>
+</html>
